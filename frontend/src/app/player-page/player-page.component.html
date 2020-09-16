@@ -1,0 +1,34 @@
+<app-button routerLink="../../..">
+  Retour au classement
+</app-button>
+
+<h1>Tableau de bord de {{ username }}</h1>
+
+<h2>Cartes en main</h2>
+
+<div *ngFor="let card of boughtCards" class="civilization_card category_{{ card.cardType }} box">
+  <p class="card_name">{{ card.cardName }}</p>
+  <p class="card_value">{{ card.faceValue }}</p>
+  <div (click)="removeCard(card)" class="action">Retirer de la main</div>
+</div>
+
+<h2>Cartes disponibles</h2>
+
+<div *ngFor="let card of cardsToBuy" class="civilization_card category_{{ card.cardType }} box">
+  <p class="card_name">{{ card.cardName }}</p>
+  <p class="card_value">{{ card.price }} / {{ card.faceValue }}</p>
+  <div (click)="card.status = CardStatus.SELECTED" *ngIf="card.status === CardStatus.UNSELECTED" class="action">
+    Sélectionner
+  </div>
+  <div (click)="card.status = CardStatus.UNSELECTED" *ngIf="card.status === CardStatus.SELECTED" class="action">
+    Désélectionner
+  </div>
+</div>
+
+<div class="checkout">
+  Total à acheter : {{ checkoutTotal }}
+</div>
+
+<app-button (click)="validatePurchase()" class="button">
+  Valider les acquisitions
+</app-button>

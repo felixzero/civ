@@ -1,0 +1,62 @@
+.url {
+  font-family: monospace;
+  font-size: 1.2em;
+}
+
+.civilization_ranking {
+  margin: 1rem 0;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.civilization_ranking h3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.civilization_ranking a {
+  text-decoration: none;
+  color: black;
+}
+
+.civilization_ranking p {
+  padding: 0 1rem;
+}
+
+.civilization_AFRICA {
+  background-color: #dc9756;
+}
+
+.civilization_ITALY_IBERIA {
+  background-color: #fb5d8e;
+}
+
+.civilization_ILLYRIA {
+  background-color: #fdf865;
+}
+
+.civilization_THRACE {
+  background-color: #9ec970;
+}
+
+.civilization_CRETE {
+  background-color: #d2e74f;
+}
+
+.civilization_ASIA {
+  background-color: #f09037;
+}
+
+.civilization_ASSYRIA {
+  background-color: #379ce7;
+}
+
+.civilization_BABYLON {
+  background-color: #a0d5fd;
+}
+
+.civilization_EGYPT {
+  background-color: #ad5fe3;
+}

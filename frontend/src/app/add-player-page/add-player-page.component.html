@@ -1,0 +1,14 @@
+<h1>Rajouter un joueur à la partie {{ gameSlug }}</h1>
+
+<form [formGroup]="formGroup">
+  <label>Nom d'utilisateur : <input formControlName="username" name="username" type="text" /></label>
+  <label>
+    Civilization :
+    <select formControlName="civilization" name="civilization">
+      <option *ngFor="let civilization of Civilization" [value]="civilization">
+        {{ civilizationToString(civilization) }}
+      </option>
+    </select>
+  </label>
+  <app-button (click)="addPlayer()">Ajouter</app-button>
+</form>

@@ -1,0 +1,59 @@
+.civilization_card {
+  margin: 1rem 0;
+  border: 2px solid black;
+  position: relative;
+  background-color: white;
+}
+
+.civilization_card p {
+  margin: 0.5rem;
+}
+
+.action {
+  position: absolute;
+  right: 0.25rem;
+  top: 0;
+  font-size: 1.3em;
+}
+
+.checkout {
+  margin: 0.5rem;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.category_CRAFT {
+  background-color: #ec7c31;
+}
+
+.category_SCIENCE {
+  background-color: #abc818;
+}
+
+.category_ART {
+  background-color: #3d7fd3;
+}
+
+.category_RELIGION {
+  background-color: #ffcc00;
+}
+
+.category_CIVIC {
+  background-color: #d40000;
+}
+
+.category_SCIENCE_ART {
+  background: linear-gradient(to right, #abc818 0%, #abc818 50%, #3d7fd3 50%, #3d7fd3 100%);
+}
+
+.category_CRAFT_SCIENCE {
+  background: linear-gradient(to right, #ec7c31 0%, #ec7c31 50%, #abc818 50%, #abc818 100%);
+}
+
+.category_ART_RELIGION {
+  background: linear-gradient(to right, #3d7fd3 0%, #3d7fd3 50%, #ffcc00 50%, #ffcc00 100%);
+}
+
+.category_ART_CIVIC {
+  background: linear-gradient(to right, #3d7fd3 0%, #3d7fd3 50%, #d40000 50%, #d40000 100%);
+}
