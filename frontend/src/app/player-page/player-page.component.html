@@ -1,34 +1,43 @@
 <app-button routerLink="../../..">
-  Retour au classement
+  {{ 'player.back-to-game' | transloco }}
 </app-button>
 
-<h1>Tableau de bord de {{ username }}</h1>
+<h1>{{ 'player.title' | transloco: { 'username': username } }}</h1>
 
-<h2>Cartes en main</h2>
+<h2>{{ 'player.cards-in-hand' | transloco }}</h2>
 
-<div *ngFor="let card of boughtCards" class="civilization_card category_{{ card.cardType }} box">
-  <p class="card_name">{{ card.cardName }}</p>
-  <p class="card_value">{{ card.faceValue }}</p>
-  <div (click)="removeCard(card)" class="action">Retirer de la main</div>
+<div *ngFor="let card of boughtCards" class="civilization_card box">
+  <div class="header category_{{ card.cardType }}">
+    <p class="card_name">{{ 'civ-cards.' + card.cardName | transloco }}</p>
+    <p class="card_value">{{ card.faceValue }}</p>
+  </div>
+  <div (click)="removeCard(card)" class="action">{{ 'player.remove-from-hand' | transloco }}</div>
 </div>
 
-<h2>Cartes disponibles</h2>
+<h2>{{ 'player.available-cards' | transloco }}</h2>
 
-<div *ngFor="let card of cardsToBuy" class="civilization_card category_{{ card.cardType }} box">
-  <p class="card_name">{{ card.cardName }}</p>
-  <p class="card_value">{{ card.price }} / {{ card.faceValue }}</p>
+<app-button (click)="validatePurchase()" class="button">
+  {{ 'player.validate' | transloco }}
+</app-button>
+
+<div *ngFor="let card of cardsToBuy" class="civilization_card box">
+  <div class="header category_{{ card.cardType }}">
+    <p class="card_name">{{ 'civ-cards.' + card.cardName | transloco }}</p>
+    <p class="card_value">{{ card.price }} / {{ card.faceValue }}</p>
+  </div>
   <div (click)="card.status = CardStatus.SELECTED" *ngIf="card.status === CardStatus.UNSELECTED" class="action">
-    Sélectionner
+    {{ 'player.select' | transloco }}
   </div>
   <div (click)="card.status = CardStatus.UNSELECTED" *ngIf="card.status === CardStatus.SELECTED" class="action">
-    Désélectionner
+    {{ 'player.deselect' | transloco }}
   </div>
 </div>
 
 <div class="checkout">
-  Total à acheter : {{ checkoutTotal }}
+  {{ 'player.checkout-total' | transloco }} {{ checkoutTotal }}
 </div>
 
 <app-button (click)="validatePurchase()" class="button">
-  Valider les acquisitions
+  {{ 'player.validate' | transloco }}
 </app-button>
+

@@ -43,7 +43,10 @@ export class PlayerPageComponent implements OnInit {
   validatePurchase() {
     this.backendClientService
       .checkoutPlayer(this.userId, this.cardsToBuy.filter(card => card.status === CardStatus.SELECTED))
-      .subscribe(cards => this.cards = cards);
+      .subscribe(cards => {
+        this.cards = cards;
+        window.scrollTo(0, 0);
+      });
   }
 
   removeCard(card: Card) {

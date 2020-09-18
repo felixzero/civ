@@ -25,43 +25,8 @@ export enum Civilization {
   EGYPT
 }
 
-export enum CardType {
-  CRAFT,
-  SCIENCE,
-  ART,
-  RELIGION,
-  CIVIC,
-  SCIENCE_ART,
-  CRAFT_SCIENCE,
-  ART_RELIGION,
-  ART_CIVIC
-}
-
 export enum CardStatus {
   BOUGHT = 'BOUGHT',
   SELECTED = 'SELECTED',
   UNSELECTED = 'UNSELECTED'
-}
-
-export const civilizationToString = (civilization: Civilization) => {
-  switch (civilization) {
-    case Civilization.AFRICA:
-      return 'Afrique';
-    case Civilization.ITALY_IBERIA:
-      return 'Italie / Ibérie';
-    case Civilization.ILLYRIA:
-      return 'Illyrie';
-    case Civilization.THRACE:
-      return 'Thrace';
-    case Civilization.CRETE:
-      return 'Crète';
-    case Civilization.ASIA:
-      return 'Asie';
-    case Civilization.ASSYRIA:
-      return 'Assyrie';
-    case Civilization.BABYLON:
-      return 'Babylone';
-    case Civilization.EGYPT:
-      return 'Égypte';
-  }
 }

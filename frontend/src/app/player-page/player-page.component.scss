@@ -1,19 +1,29 @@
 .civilization_card {
   margin: 1rem 0;
-  border: 2px solid black;
+  border: 1px solid black;
+  border-radius: 0.5rem;
   position: relative;
   background-color: white;
+  box-shadow: 2px 2px 5px 0 #a0a0a0;
 }
 
-.civilization_card p {
-  margin: 0.5rem;
+.civilization_card .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 0.5em;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-size: 1.4em;
+}
+
+.civilization_card .header p {
+  margin: 0;
 }
 
 .action {
-  position: absolute;
-  right: 0.25rem;
-  top: 0;
-  font-size: 1.3em;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.4em;
 }
 
 .checkout {

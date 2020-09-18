@@ -5,8 +5,10 @@
 
 .civilization_ranking {
   margin: 1rem 0;
-  border: 2px solid black;
+  border: 1px solid black;
+  border-radius: 0.5rem;
   background-color: white;
+  box-shadow: 2px 2px 5px 0 #a0a0a0;
 }
 
 .civilization_ranking h3 {
@@ -14,6 +16,7 @@
   justify-content: space-between;
   margin: 0;
   padding: 0.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .civilization_ranking a {

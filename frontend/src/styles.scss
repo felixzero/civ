@@ -1,17 +1,23 @@
 body {
   box-sizing: border-box;
   font-family: 'Noto Sans', sans-serif;
-  background-color: #fffff3;
-}
-
-p {
   font-size: 2vh;
 }
 
 h1 {
-  font-size: 4vh;
+  text-align: center;
 }
 
-h2, h3 {
-  font-size: 2.5vh;
+h2 {
+  color: #6c5402;
 }
+
+h2:after {
+  content: '';
+  display: block;
+  background-color: #6c5402;
+  height: 0.1em;
+}
+
+
+

@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Civilization, civilizationToString} from '../services/game-types.type';
+import {Civilization} from '../services/game-types.type';
 import {BackendClientService} from '../services/backend-client.service';
 import {ActivatedRoute, Router} from '@angular/router';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
@@ -11,8 +11,7 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 })
 export class AddPlayerPageComponent {
   gameSlug = '';
-  Civilization = Object.keys(Civilization).map(element => Number(element)).filter(element => !isNaN(element));
-  civilizationToString = civilizationToString;
+  Civilization = Object.keys(Civilization).filter(element => isNaN(Number(element)));
 
   formGroup = new FormGroup({
     username: new FormControl('', Validators.required),

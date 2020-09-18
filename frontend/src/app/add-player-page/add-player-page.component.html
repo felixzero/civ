@@ -1,14 +1,18 @@
-<h1>Rajouter un joueur à la partie {{ gameSlug }}</h1>
+<h1>{{ 'add-player.title' | transloco: { 'gameSlug': gameSlug } }}</h1>
 
 <form [formGroup]="formGroup">
-  <label>Nom d'utilisateur : <input formControlName="username" name="username" type="text" /></label>
-  <label>
-    Civilization :
+  <div class="form_input">
+    <label>{{ 'add-player.username' | transloco }}</label>
+    <input formControlName="username" name="username" type="text" />
+  </div>
+  <div class="form_input">
+    <label>{{ 'add-player.civilization' | transloco }}</label>
     <select formControlName="civilization" name="civilization">
       <option *ngFor="let civilization of Civilization" [value]="civilization">
-        {{ civilizationToString(civilization) }}
+        {{ 'civilizations.' + civilization.toLowerCase() | transloco }}
       </option>
     </select>
-  </label>
-  <app-button (click)="addPlayer()">Ajouter</app-button>
+  </div>
+
+  <app-button (click)="addPlayer()">{{ 'add-player.add' | transloco }}</app-button>
 </form>

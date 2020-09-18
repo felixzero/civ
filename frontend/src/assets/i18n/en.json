@@ -1,0 +1,65 @@
+{
+  "landing": {
+    "title": "Score calculator for Advanced Civilization",
+    "action": "Start a new game"
+  },
+  "score": {
+    "title": "Score board",
+    "add-player": "Add player",
+    "points": "{{score}} points"
+  },
+  "add-player": {
+    "title": "Add a new player to the game: {{gameSlug}}",
+    "username": "User name:",
+    "civilization": "Civilization:",
+    "add": "Add"
+  },
+  "player": {
+    "back-to-game": "Back to ranking",
+    "title": "{{ username }}'s cockpit",
+    "cards-in-hand": "Cards in hand",
+    "remove-from-hand": "Remove from hand",
+    "available-cards": "Available cards",
+    "select": "Select",
+    "deselect": "Deselect",
+    "checkout-total": "Checkout total:",
+    "validate": "Validate"
+  },
+  "civ-cards": {
+    "cloth_making": "Cloth making",
+    "pottery": "Pottery",
+    "metal_working": "Metal working",
+    "agriculture": "Agriculture",
+    "road_building": "Road building",
+    "mining": "Mining",
+    "engineering": "Engineering",
+    "astronomy": "Astronomy",
+    "coinage": "Coinage",
+    "medicine": "Medicine",
+    "mathematics": "Mathematics",
+    "drama_poetry": "Drama and poetry",
+    "music": "Music",
+    "architecture": "Architecture",
+    "mysticism": "Mysticism",
+    "literacy": "Literacy",
+    "law": "Law",
+    "military": "Military",
+    "democracy": "Democracy",
+    "philosophy": "Philosophy",
+    "deism": "Deism",
+    "enlightenment": "Enlightenment",
+    "monotheism": "Monotheism",
+    "theology": "Theology"
+  },
+  "civilizations": {
+    "africa": "Africa",
+    "italy_iberia": "Italy / Iberia",
+    "illyria": "Illyria",
+    "thrace": "Thrace",
+    "crete": "Crete",
+    "asia": "Asia",
+    "assyria": "Assyria",
+    "babylon": "Babylon",
+    "egypt": "Egypt"
+  }
+}

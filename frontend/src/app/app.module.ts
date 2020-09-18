@@ -10,6 +10,7 @@ import {ButtonComponent} from './components/button/button.component';
 import {AddPlayerPageComponent} from './add-player-page/add-player-page.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { TranslocoRootModule } from './transloco/transloco-root.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {HttpClientModule} from '@angular/common/http';
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    TranslocoRootModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,20 +1,17 @@
-<h1>Tableau des scores</h1>
+<h1>{{ 'score.title' | transloco }}</h1>
 
-<p class="share_link">
-  Lien de partage :
-</p>
 <div class="url">http://guilloy.fr/civ/{{ gameSlug }}</div>
 
 <div *ngFor="let player of players" class="civilization_ranking box">
   <a routerLink="player/{{ player.id }}/{{ player.username }}">
     <h3 class="civilization_{{ player.civilization }}">
       <span class="username">{{ player.username }}</span>
-      <span class="civilization">{{ civilizationToString(player.civilization) }}</span>
+      <span class="civilization">{{ 'civilizations.' + player.civilization.toString().toLowerCase() | transloco }}</span>
     </h3>
-    <p>{{ player.score }} points</p>
+    <p>{{ 'score.points' | transloco: { 'score': player.score } }}</p>
   </a>
 </div>
 
 <app-button routerLink="add-player">
-  Ajouter un joueur
+  {{ 'score.add-player' | transloco }}
 </app-button>

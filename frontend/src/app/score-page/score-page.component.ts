@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {BackendClientService} from '../services/backend-client.service';
-import {civilizationToString, Player} from '../services/game-types.type';
+import {Player} from '../services/game-types.type';
 
 @Component({
   selector: 'app-score-page',
@@ -11,7 +11,6 @@ import {civilizationToString, Player} from '../services/game-types.type';
 export class ScorePageComponent implements OnInit {
   gameSlug: string | null = null;
   players: Player[] = [];
-  civilizationToString = civilizationToString;
 
   constructor(private backendClientService: BackendClientService, private route: ActivatedRoute) {}
 
