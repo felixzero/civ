@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  backendHostName: 'http://guilloy.fr/civ-backend'
+  backendHostName: 'http://api.civ.guilloy.fr/'
 };
