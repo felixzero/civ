@@ -2,6 +2,8 @@ import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {ScorePageComponent} from './score-page.component';
 import {RouterTestingModule} from '@angular/router/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { TranslocoTestingModule } from '@ngneat/transloco';
 
 describe('ScorePageComponent', () => {
   let component: ScorePageComponent;
@@ -10,7 +12,7 @@ describe('ScorePageComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ScorePageComponent],
-      imports: [RouterTestingModule]
+      imports: [RouterTestingModule, HttpClientTestingModule, TranslocoTestingModule]
     })
     .compileComponents();
   }));

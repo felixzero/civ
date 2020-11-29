@@ -2,6 +2,8 @@ import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {LandingPageComponent} from './landing-page.component';
 import {RouterTestingModule} from '@angular/router/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { TranslocoTestingModule } from '@ngneat/transloco';
 
 describe('LandingPageComponent', () => {
   let component: LandingPageComponent;
@@ -10,7 +12,7 @@ describe('LandingPageComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [LandingPageComponent],
-      imports: [RouterTestingModule]
+      imports: [RouterTestingModule, HttpClientTestingModule, TranslocoTestingModule]
     })
     .compileComponents();
   }));
