@@ -20,7 +20,7 @@ jobs:
         working-directory: backend
         run: |
           ./mvnw test
-          ./mvnw clean install
+          ./mvnw clean install -P prod
 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v14
@@ -30,5 +30,5 @@ jobs:
           application_name: civ-backend
           environment_name: CivBackend-env-1
           region: eu-west-3
-          version_label: 1
+          version_label: ${{ github.sha }}
           deployment_package: backend/target/civ-0.0.1-SNAPSHOT.jar
