@@ -1,0 +1,303 @@
+[
+    {
+        "cardName": "cloth_making",
+        "faceValue": 45,
+        "cardType": "CRAFT",
+        "credits": [
+            { "giver": "agriculture", "amount": 10 },
+            { "giver": "engineering", "amount": 10 },
+            { "giver": "metal_working", "amount": 10 },
+            { "giver": "mining", "amount": 10 },
+            { "giver": "pottery", "amount": 10 },
+            { "giver": "road_building", "amount": 10 }
+        ]
+    },
+    {
+        "cardName": "pottery",
+        "faceValue": 45,
+        "cardType": "CRAFT",
+        "credits": [
+            { "giver": "agriculture", "amount": 10 },
+            { "giver": "engineering", "amount": 10 },
+            { "giver": "metal_working", "amount": 10 },
+            { "giver": "mining", "amount": 10 },
+            { "giver": "cloth_making", "amount": 10 },
+            { "giver": "road_building", "amount": 10 }
+        ]
+    },
+    {
+        "cardName": "metal_working",
+        "faceValue": 80,
+        "cardType": "CRAFT",
+        "credits": [
+            { "giver": "agriculture", "amount": 10 },
+            { "giver": "engineering", "amount": 10 },
+            { "giver": "cloth_making", "amount": 10 },
+            { "giver": "mining", "amount": 10 },
+            { "giver": "pottery", "amount": 10 },
+            { "giver": "road_building", "amount": 10 }
+        ]
+    },
+    {
+        "cardName": "agriculture",
+        "faceValue": 110,
+        "cardType": "CRAFT",
+        "credits": [
+            { "giver": "cloth_making", "amount": 10 },
+            { "giver": "engineering", "amount": 10 },
+            { "giver": "metal_working", "amount": 10 },
+            { "giver": "mining", "amount": 10 },
+            { "giver": "pottery", "amount": 10 },
+            { "giver": "road_building", "amount": 10 }
+        ]
+    },
+    {
+        "cardName": "road_building",
+        "faceValue": 140,
+        "cardType": "CRAFT",
+        "credits": [
+            { "giver": "agriculture", "amount": 10 },
+            { "giver": "engineering", "amount": 10 },
+            { "giver": "metal_working", "amount": 10 },
+            { "giver": "mining", "amount": 10 },
+            { "giver": "pottery", "amount": 10 },
+            { "giver": "cloth_making", "amount": 10 }
+        ]
+    },
+    {
+        "cardName": "mining",
+        "faceValue": 180,
+        "cardType": "CRAFT",
+        "credits": [
+            { "giver": "agriculture", "amount": 10 },
+            { "giver": "engineering", "amount": 10 },
+            { "giver": "metal_working", "amount": 10 },
+            { "giver": "cloth_making", "amount": 10 },
+            { "giver": "pottery", "amount": 10 },
+            { "giver": "road_building", "amount": 10 }
+        ]
+    },
+    {
+        "cardName": "engineering",
+        "faceValue": 140,
+        "cardType": "CRAFT_SCIENCE",
+        "credits": [
+            { "giver": "agriculture", "amount": 10 },
+            { "giver": "cloth_making", "amount": 10 },
+            { "giver": "metal_working", "amount": 10 },
+            { "giver": "pottery", "amount": 10 },
+            { "giver": "astronomy", "amount": 20 },
+            { "giver": "coinage", "amount": 20 },
+            { "giver": "mathematics", "amount": 20 },
+            { "giver": "medicine", "amount": 20 }
+        ]
+    },
+    {
+        "cardName": "astronomy",
+        "faceValue": 80,
+        "cardType": "SCIENCE",
+        "credits": [
+            { "giver": "engineering", "amount": 20 },
+            { "giver": "coinage", "amount": 20 },
+            { "giver": "mathematics", "amount": 20 },
+            { "giver": "medicine", "amount": 20 }
+        ]
+    },
+    {
+        "cardName": "coinage",
+        "faceValue": 110,
+        "cardType": "SCIENCE",
+        "credits": [
+            { "giver": "astronomy", "amount": 20 },
+            { "giver": "engineering", "amount": 20 },
+            { "giver": "mathematics", "amount": 20 },
+            { "giver": "medicine", "amount": 20 }
+        ]
+    },
+    {
+        "cardName": "medicine",
+        "faceValue": 140,
+        "cardType": "SCIENCE",
+        "credits": [
+            { "giver": "astronomy", "amount": 20 },
+            { "giver": "coinage", "amount": 20 },
+            { "giver": "mathematics", "amount": 20 },
+            { "giver": "engineering", "amount": 20 }
+        ]
+    },
+    {
+        "cardName": "mathematics",
+        "faceValue": 230,
+        "cardType": "SCIENCE_ART",
+        "credits": [
+            { "giver": "astronomy", "amount": 20 },
+            { "giver": "coinage", "amount": 20 },
+            { "giver": "engineering", "amount": 20 },
+            { "giver": "medicine", "amount": 20 }
+        ]
+    },
+    {
+        "cardName": "drama_poetry",
+        "faceValue": 60,
+        "cardType": "ART",
+        "credits": [
+            { "giver": "architecture", "amount": 5 },
+            { "giver": "mysticism", "amount": 5 },
+            { "giver": "music", "amount": 5 },
+            { "giver": "literacy", "amount": 5 },
+            { "giver": "mathematics", "amount": 5 }
+        ]
+    },
+    {
+        "cardName": "music",
+        "faceValue": 60,
+        "cardType": "ART",
+        "credits": [
+            { "giver": "architecture", "amount": 5 },
+            { "giver": "drama_poetry", "amount": 5 },
+            { "giver": "mysticism", "amount": 5 },
+            { "giver": "literacy", "amount": 5 },
+            { "giver": "mathematics", "amount": 5 }
+        ]
+    },
+    {
+        "cardName": "architecture",
+        "faceValue": 120,
+        "cardType": "ART",
+        "credits": [
+            { "giver": "mysticism", "amount": 5 },
+            { "giver": "drama_poetry", "amount": 5 },
+            { "giver": "music", "amount": 5 },
+            { "giver": "literacy", "amount": 5 },
+            { "giver": "mathematics", "amount": 5 }
+        ]
+    },
+    {
+        "cardName": "mysticism",
+        "faceValue": 50,
+        "cardType": "ART_RELIGION",
+        "credits": [
+            { "giver": "architecture", "amount": 5 },
+            { "giver": "drama_poetry", "amount": 5 },
+            { "giver": "music", "amount": 5 },
+            { "giver": "literacy", "amount": 5 },
+            { "giver": "mathematics", "amount": 5 }
+        ]
+    },
+    {
+        "cardName": "literacy",
+        "faceValue": 110,
+        "cardType": "ART_CIVIC",
+        "credits": [
+            { "giver": "architecture", "amount": 5 },
+            { "giver": "drama_poetry", "amount": 20 },
+            { "giver": "music", "amount": 5 },
+            { "giver": "mathematics", "amount": 5 },
+            { "giver": "mysticism", "amount": 5 }
+        ]
+    },
+    {
+        "cardName": "law",
+        "faceValue": 170,
+        "cardType": "CIVIC",
+        "credits": [
+            { "giver": "literacy", "amount": 25 },
+            { "giver": "architecture", "amount": 15 }
+        ]
+    },
+    {
+        "cardName": "military",
+        "faceValue": 180,
+        "cardType": "CIVIC",
+        "credits": [
+            { "giver": "metal_working", "amount": 20 }
+        ]
+    },
+    {
+        "cardName": "democracy",
+        "faceValue": 200,
+        "cardType": "CIVIC",
+        "credits": [
+            { "giver": "agriculture", "amount": 10 },
+            { "giver": "engineering", "amount": 10 },
+            { "giver": "metal_working", "amount": 10 },
+            { "giver": "cloth_making", "amount": 10 },
+            { "giver": "pottery", "amount": 10 },
+            { "giver": "road_building", "amount": 10 },
+            { "giver": "mining", "amount": 10 },
+            { "giver": "architecture", "amount": 10 },
+            { "giver": "drama_poetry", "amount": 10 },
+            { "giver": "music", "amount": 10 },
+            { "giver": "literacy", "amount": 25 }
+        ]
+    },
+    {
+        "cardName": "philosophy",
+        "faceValue": 240,
+        "cardType": "CIVIC",
+        "credits": [
+            { "giver": "astronomy", "amount": 20 },
+            { "giver": "coinage", "amount": 20 },
+            { "giver": "engineering", "amount": 20 },
+            { "giver": "medicine", "amount": 20 },
+            { "giver": "mathematics", "amount": 20 },
+            { "giver": "music", "amount": 20 },
+            { "giver": "literacy", "amount": 25 }
+        ]
+    },
+    {
+        "cardName": "deism",
+        "faceValue": 80,
+        "cardType": "RELIGION",
+        "credits": [
+            { "giver": "mysticism", "amount": 15 }
+        ]
+    },
+    {
+        "cardName": "enlightenment",
+        "faceValue": 150,
+        "cardType": "RELIGION",
+        "credits": [
+            { "giver": "deism", "amount": 15 },
+            { "giver": "mysticism", "amount": 15 },
+            { "giver": "mathematics", "amount": 10 },
+            { "giver": "architecture", "amount": 10 },
+            { "giver": "drama_poetry", "amount": 10 },
+            { "giver": "music", "amount": 10 },
+            { "giver": "literacy", "amount": 10 }
+        ]
+    },
+    {
+        "cardName": "monotheism",
+        "faceValue": 220,
+        "cardType": "RELIGION",
+        "credits": [
+            { "giver": "deism", "amount": 15 },
+            { "giver": "mysticism", "amount": 15 },
+            { "giver": "enlightenment", "amount": 15 },
+            { "giver": "agriculture", "amount": 10 },
+            { "giver": "engineering", "amount": 10 },
+            { "giver": "metal_working", "amount": 10 },
+            { "giver": "cloth_making", "amount": 10 },
+            { "giver": "pottery", "amount": 10 },
+            { "giver": "road_building", "amount": 10 },
+            { "giver": "mining", "amount": 10 }
+        ]
+    },
+    {
+        "cardName": "theology",
+        "faceValue": 250,
+        "cardType": "RELIGION",
+        "credits": [
+            { "giver": "deism", "amount": 15 },
+            { "giver": "mysticism", "amount": 15 },
+            { "giver": "enlightenment", "amount": 15 },
+            { "giver": "astronomy", "amount": 20 },
+            { "giver": "coinage", "amount": 20 },
+            { "giver": "engineering", "amount": 20 },
+            { "giver": "medicine", "amount": 20 },
+            { "giver": "mathematics", "amount": 20 }
+        ]
+    }
+]
+

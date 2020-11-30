@@ -1,7 +1,9 @@
 body {
   box-sizing: border-box;
   font-family: 'Noto Sans', sans-serif;
-  font-size: 2vh;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0.5rem;
 }
 
 h1 {

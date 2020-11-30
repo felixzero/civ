@@ -4,8 +4,7 @@ import {BackendClientService} from '../services/backend-client.service';
 
 @Component({
   selector: 'app-landing-page',
-  templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.scss']
+  templateUrl: './landing-page.component.html'
 })
 export class LandingPageComponent {
   constructor(private router: Router, private backendClientService: BackendClientService) {}

@@ -1,0 +1,17 @@
+name: Load game data
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Load data
+        run: |
+          cat game-data.json | curl -X PUT -H "Content-Type: application/json"--data-binary @-  http://api.civ.guilloy.fr/game-data
+      

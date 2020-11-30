@@ -4,8 +4,7 @@ import fr.guilloy.civ.constants.Civilization;
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Entity
@@ -23,9 +22,9 @@ public class Player {
     private Civilization civilization;
 
     @ManyToMany
-    private List<CivilizationCard> boughtCards;
+    private Set<CivilizationCard> boughtCards;
 
-    public List<CivilizationCard> getBoughtCards() {
+    public Collection<CivilizationCard> getBoughtCards() {
         if (boughtCards == null) {
             return List.of();
         }
@@ -41,9 +40,9 @@ public class Player {
         return boughtCards.stream().map(CivilizationCard::getFaceValue).reduce(0, Integer::sum);
     }
 
-    public void addCards(List<CivilizationCard> cards) {
+    public void addCards(Collection<CivilizationCard> cards) {
         if (boughtCards == null) {
-            boughtCards = cards;
+            boughtCards = new HashSet<>(cards);
         } else {
             boughtCards.addAll(cards);
         }
@@ -57,6 +56,6 @@ public class Player {
         boughtCards = boughtCards
                 .stream()
                 .filter(card -> !card.getCardName().equals(cardName))
-                .collect(Collectors.toList());
+                .collect(Collectors.toSet());
     }
 }

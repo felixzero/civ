@@ -10,9 +10,8 @@
 .civilization_card .header {
   display: flex;
   justify-content: space-between;
-  padding: 0.5em 0.5em;
+  padding: 0.5rem 0.5rem;
   border-radius: 0.5rem 0.5rem 0 0;
-  font-size: 1.4em;
 }
 
 .civilization_card .header p {
@@ -20,16 +19,14 @@
 }
 
 .action {
-  padding: 0.5em;
+  padding: 0.5rem;
   text-align: center;
   text-decoration: underline;
-  font-size: 1.4em;
 }
 
 .checkout {
   margin: 0.5rem;
   font-weight: bold;
-  font-size: 1.5em;
 }
 
 .category_CRAFT {

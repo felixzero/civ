@@ -9,7 +9,6 @@ import org.mapstruct.Mapping;
 public interface CardMapper {
     CivilizationCard fromDto(CardDto dto);
 
-    // TODO
     @Mapping(target = "price", ignore = true)
     @Mapping(target = "status", ignore = true)
     CardDto toDto(CivilizationCard card);

@@ -11,6 +11,7 @@ import fr.guilloy.civ.repository.CivilizationCardRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -22,7 +23,7 @@ public class CreditCalculatorService {
     private final CardMapper cardMapper;
 
     public List<CardDto> cardsOfPlayer(Player player) {
-        List<CivilizationCard> alreadyBoughtCards = player.getBoughtCards();
+        var alreadyBoughtCards = player.getBoughtCards();
 
         return civilizationCardRepository
                 .findAll()
@@ -31,7 +32,7 @@ public class CreditCalculatorService {
                 .collect(Collectors.toList());
     }
 
-    private CardDto setPriceAndStatus(CivilizationCard cardInGame, List<CivilizationCard> alreadyBoughtCards) {
+    private CardDto setPriceAndStatus(CivilizationCard cardInGame, Collection<CivilizationCard> alreadyBoughtCards) {
         CardDto cardDto = cardMapper.toDto(cardInGame);
         boolean alreadyInHand = alreadyBoughtCards.stream().anyMatch(alreadyBought -> alreadyBought.getCardName().equals(cardDto.getCardName()));
         cardDto.setStatus(alreadyInHand ? CardStatus.BOUGHT : CardStatus.UNSELECTED);
