@@ -12,6 +12,9 @@ jobs:
       - uses: actions/checkout@v1
 
       - name: Load data
+        env:
+          ADMIN_USERNAME: ${{ secrets.ADMIN_USERNAME }}
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
         run: |
-          cat game-data.json | curl -X PUT -H "Content-Type: application/json"--data-binary @-  http://api.civ.guilloy.fr/game-data
+          cat game-data.json | curl -X PUT -u "$ADMIN_USERNAME:$ADMIN_PASSWORD" -H "Content-Type: application/json" --data-binary @- http://localhost:8080/game-data
       

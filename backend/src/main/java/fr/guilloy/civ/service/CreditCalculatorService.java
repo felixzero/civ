@@ -3,7 +3,6 @@ package fr.guilloy.civ.service;
 import fr.guilloy.civ.constants.CardStatus;
 import fr.guilloy.civ.dto.CardDto;
 import fr.guilloy.civ.mapper.CardMapper;
-import fr.guilloy.civ.model.CardCredit;
 import fr.guilloy.civ.model.CivilizationCard;
 import fr.guilloy.civ.model.Player;
 import fr.guilloy.civ.repository.CardCreditRepository;
