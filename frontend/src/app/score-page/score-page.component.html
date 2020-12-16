@@ -1,6 +1,6 @@
 <h1>{{ 'score.title' | transloco }}</h1>
 
-<div class="url">http://guilloy.fr/civ/{{ gameSlug }}</div>
+<div class="url">https://guilloy.fr/civ/{{ gameSlug }}</div>
 
 <div *ngFor="let player of players" class="civilization_ranking box">
   <a routerLink="player/{{ player.id }}/{{ player.username }}">

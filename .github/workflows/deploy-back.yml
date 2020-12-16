@@ -20,15 +20,14 @@ jobs:
         working-directory: backend
         run: |
           ./mvnw test
-          ./mvnw clean install -P prod
+          ./mvnw clean package -P prod
 
-      - name: Deploy to EB
-        uses: einaregilsson/beanstalk-deploy@v14
-        with:
-          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: civ-backend
-          environment_name: CivBackend-env-1
-          region: eu-west-3
-          version_label: ${{ github.sha }}
-          deployment_package: backend/target/civ-0.0.1-SNAPSHOT.jar
+      - name: Deploy
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+            SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
+            SOURCE: "backend/target/*.jar"
+            REMOTE_HOST: "guilloy.fr"
+            REMOTE_USER: "github"
+            TARGET: "/var/www/java"
+

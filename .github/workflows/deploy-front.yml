@@ -23,9 +23,11 @@ jobs:
           npm run build:ci
       
       - name: Deploy
-        working-directory: frontend
+        uses: easingthemes/ssh-deploy@v2.1.5
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        run: |
-          aws s3 cp --recursive --region eu-west-3 dist/frontend s3://civ.guilloy.fr
+            SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
+            SOURCE: "frontend/dist/frontend/"
+            REMOTE_HOST: "guilloy.fr"
+            REMOTE_USER: "github"
+            TARGET: "/var/www/htdocs/civ-static"
+
