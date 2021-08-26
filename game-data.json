@@ -133,7 +133,11 @@
             { "giver": "astronomy", "amount": 20 },
             { "giver": "coinage", "amount": 20 },
             { "giver": "engineering", "amount": 20 },
-            { "giver": "medicine", "amount": 20 }
+            { "giver": "medicine", "amount": 20 },
+            { "giver": "drama_poetry", "amount": 5 },
+            { "giver": "music", "amount": 20 },
+            { "giver": "architecture", "amount": 5 },
+            { "giver": "literacy", "amount": 5 }
         ]
     },
     {
@@ -202,7 +206,10 @@
         "cardType": "CIVIC",
         "credits": [
             { "giver": "literacy", "amount": 25 },
-            { "giver": "architecture", "amount": 15 }
+            { "giver": "architecture", "amount": 15 },
+            { "giver": "mathematics", "amount": 5 },
+            { "giver": "drama_poetry", "amount": 5 },
+            { "giver": "music", "amount": 5 }
         ]
     },
     {
@@ -240,7 +247,7 @@
             { "giver": "coinage", "amount": 20 },
             { "giver": "engineering", "amount": 20 },
             { "giver": "medicine", "amount": 20 },
-            { "giver": "mathematics", "amount": 20 },
+            { "giver": "mathematics", "amount": 25 },
             { "giver": "music", "amount": 20 },
             { "giver": "literacy", "amount": 25 }
         ]
@@ -296,7 +303,7 @@
             { "giver": "coinage", "amount": 20 },
             { "giver": "engineering", "amount": 20 },
             { "giver": "medicine", "amount": 20 },
-            { "giver": "mathematics", "amount": 20 }
+            { "giver": "mathematics", "amount": 25 }
         ]
     }
 ]
