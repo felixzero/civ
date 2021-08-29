@@ -23,7 +23,8 @@
     "select": "Select",
     "deselect": "Deselect",
     "checkout-total": "Checkout total:",
-    "validate": "Validate"
+    "validate": "Validate",
+    "card-requires": "Requires {{ required }}"
   },
   "civ-cards": {
     "cloth_making": "Cloth making",
@@ -50,6 +51,32 @@
     "enlightenment": "Enlightenment",
     "monotheism": "Monotheism",
     "theology": "Theology"
+  },
+  "civ-cards-rule": {
+    "cloth_making": "All ships may move by one more area per turn.",
+    "pottery": "Allows using Grain cards to reduce the effects of Famine.",
+    "metal_working": "During conflicts, a player with Metal working starts removing his tokens after any player without Metal working, even if he has fewer tokens than them.",
+    "agriculture": "Augments by one point the maximum population of any area occupied by this player. Doesn't apply in areas were more than one nation is present.",
+    "road_building": "Units may move through two terrestrial areas rather than one. The first area may not contain any of another nation's tokens. Units may not move through one land area and then board a ship or inversely.<br/>Aggravates the effects of Epidemics, Civil Disorder, and Iconoclasm and Heresy.",
+    "mining": "Increases the value of a set of Iron, Bronze, Silver or Gold by one card when buying civilization cards or for victory conditions. May not increase the value of a set above the maximum value for this set.<br/>Aggravates the effects of Slave Revolt.",
+    "engineering": "A player with Engineering requires only 6 tokens to attack a city, and the city is replaced by 5 tokens only. Attacking a city of a player holding Engineering requires 8 tokens, and the city is replaced by 7 tokens. If both the attacker and the defender possess Engineering, the effect cancels out.<br/>Reduces the effects of Earthquake and Flood.",
+    "astronomy": "Ships may cross open seas.",
+    "coinage": "Enables to vary the taxation rate between 1 token per city and 3 token per city during each taxation phase (the chosen taxation rate is allowed to cause a tax revolt). The same taxation rate must be applied to all cities during a round.",
+    "medicine": "Reduces the effects of Epidemics.",
+    "mathematics": "No effect.",
+    "drama_poetry": "Reduces the effects of Civil War and Civil Disorder.",
+    "music": "Reduces the effects of Civil War and Civil Disorder.",
+    "architecture": "Once per turn, allows to use tokens from the treasurery to pay up to half of the cost of building a city. No token from other nations may be present in the area where the city is built.",
+    "mysticism": "Reduces the effect of Superstition.",
+    "literacy": "No effect.",
+    "law": "Reduces the effects of Civil Disorder and Iconoclasm and Heresy.",
+    "military": "A player holding Military builds his ships and moves after all players that don't hold Military.<br/>Adds consequences to Civil War either as Victim or Beneficiary.<br/>Aggravates the effects of Civil Disorder.",
+    "democracy": "Gives immunity against tax revolts.<br/>Reduces the effects of Civil War and Civil Disorder.",
+    "philosophy": "Alters the effect of Civil War (not necessarily for the better). Reduces the effects of Iconoclasm and Heresy.",
+    "deism": "Reduces the effects of Superstition.",
+    "enlightenment": "Nullifies the effects of Superstition. Reduces the effect of Slave Revolt.",
+    "monotheism": "At the end of the calamity phase, the player may convert area adjacent by land to his own areas by replacing each city and token in the target area by his own. If his stock is not sufficient to replace every token or city in this area, then this area may not be converged. Conversion may not apply to players that possess Monotheism or Theology, nor to barbarians or pirates.<br/>Aggravates the effects of Iconoclasm and Heresy.",
+    "theology": "Reduces the effects of Iconoclasm and Heresy.<br/>Converts against conversions by players with Monotheism."
   },
   "civilizations": {
     "africa": "Africa",

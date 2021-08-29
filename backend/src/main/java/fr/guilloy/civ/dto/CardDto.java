@@ -14,4 +14,5 @@ public class CardDto {
     private Integer faceValue;
     private Integer price;
     private CardStatus status;
+    private String requires;
 }

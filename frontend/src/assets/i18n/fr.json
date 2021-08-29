@@ -23,7 +23,8 @@
     "select": "Sélectionner",
     "deselect": "Désélectionner",
     "checkout-total": "Total à acheter :",
-    "validate": "Valider les acquisitions"
+    "validate": "Valider les acquisitions",
+    "card-requires": "Requiert {{ required }}"
   },
   "civ-cards": {
     "cloth_making": "Tissage",
@@ -50,6 +51,32 @@
     "enlightenment": "Illumination",
     "monotheism": "Monothéisme",
     "theology": "Théologie"
+  },
+  "civ-cards-rule": {
+    "cloth_making": "Les navires peuvent se déplacer d'une case supplémentaire.",
+    "pottery": "Permet de mobiliser des cartes Grain pour réduire l'effet de la famine.",
+    "metal_working": "Lors d'un conflit, un joueur possédant la Métallurgie retire toujours ses unités après tous les joueurs ne possédant pas la Métallurgie, même si leur force est supérieure.",
+    "agriculture": "Augmente d'un point la population maximale d'une case occupée par ce joueur. Ne s'applique pas lors des conflits en présence d'unités appartenant à une autre nation.",
+    "road_building": "Les unités du joueur peuvent se déplacer de deux cases terrestres plutôt qu'une. La case intermédiaire ne doit pas contenir d'unité appartenant à un autre joueur, pirate ou barbare. Une unité ne peut pas se déplacer d'une case sur la terre puis se déplacer en navire ou inversement. Aggrave les effets de l'Epidémie, du Désordre Civil, et d'Iconoclasme et Hérésie.",
+    "mining": "Augmente d'une carte la valeur de tout set de Fer, Bronze, Argent, Gemmes ou Or lors de l'achat de cartes de civilisation et le calcul du score final. Minage ne permet pas de dépasser la valeur maximale du set complet.<br/>Aggrave l'effet de la Révolte d'Esclaves.",
+    "engineering": "Un joueur disposant du Génie Civil n'a besoin que de 6 unités pour attaquer une cité, et la cité est remplacée par 5 pions seulement. Attaquer la cité d'un joueur disposant du Génie Civil requiert 8 unités, et sa cité est remplacée par 7 unités. Si l'attaquant et le défenseur possèdent tous deux Génie Civil, l'effet s'annule.<br/>Réduit les effets du Séisme et de l'Inondation.",
+    "astronomy": "Les navires peuvent traverser les cases de pleine mer.",
+    "coinage": "Permet de faire varier le taux de taxation entre 1 et 3 unités par cité à chaque tour (y compris si le taux choisi déclenche une révolte). Le taux appliqué à un tour donné est le même pour toutes les cités du joueur.",
+    "medicine": "Réduit les effets de l'Epidémie.",
+    "mathematics": "Sans effet.",
+    "drama_poetry": "Réduit les effets de la Guerre Civile et du Désordre Civil.",
+    "music": "Réduit les effets de la Guerre Civile et du Désordre Civil.",
+    "architecture": "Une fois par tour, le joueur peut utiliser sa trésorerie pour régler jusqu'à la moitié du prix de construction d'une cité.",
+    "mysticism": "Réduit l'effet de la Superstition.",
+    "literacy": "Sans effet.",
+    "law": "Réduit l'effet du Désordre Civil et d'Iconoclasme et Hérésie.",
+    "military": "Un joueur possédant Armée construit ses navires et se déplace après tous les joueurs ne possédant pas Armée.<br/>Ajoute des conséquences supplémentaires à la Guerre Civile en tant que victime ou bénéficiaire.<br/>Aggrave les effets de Désordre Civil.",
+    "democracy": "Immunise contre les révoltes.<br/>Réduit les effets de la Guerre Civile et du Désordre Civil.",
+    "philosophy": "Modifie l'effet de la Guerre Civile (pas nécessairement pour le mieux). Réduit l'effet d'Iconoclasme et Hérésie.",
+    "deism": "Réduit l'effet de la Superstition.",
+    "enlightenment": "Supprime totalement l'effet de la Superstition. Réduit l'effet de la Révolte d'Esclaves.",
+    "monotheism": "A la fin de la phase de Calamité, le joueur peut convertir une case adjacente à la sienne par la terre en remplaçant son contenu par ses propres unités et cités. Le joueur doit disposer d'unités en nombre suffisante dans son stock pour remplacer toutes les cités et unités de la case cible. La conversion ne peut pas s'appliquer aux barbares, pirates, et joueurs disposant de Monothéisme ou Théologie.<br/>Aggrave l'effet d'Iconoclasme et Hérésie.",
+    "theology": "Réduit l'effet d'Iconoclasme et Hérésie.<br/>Immunise contre la conversion par des joueurs détenant le Monothéisme."
   },
   "civilizations": {
     "africa": "Afrique",

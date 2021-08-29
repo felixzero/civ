@@ -18,4 +18,6 @@ public class CivilizationCard {
 
     @Enumerated(EnumType.STRING)
     private CardType cardType;
+    
+    private String requires;
 }

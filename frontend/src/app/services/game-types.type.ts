@@ -11,6 +11,8 @@ export interface Card {
   faceValue: number;
   price: number;
   status: CardStatus;
+  showDetails: boolean;
+  requires: string;
 }
 
 export enum Civilization {
