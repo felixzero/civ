@@ -17,6 +17,7 @@ public class GameDataDto {
     private Integer faceValue;
     private CardType cardType;
     private Set<CreditDto> credits;
+    private String requires;
 
     @Data
     @Builder

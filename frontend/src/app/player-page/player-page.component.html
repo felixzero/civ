@@ -7,9 +7,13 @@
 <h2>{{ 'player.cards-in-hand' | transloco }}</h2>
 
 <div *ngFor="let card of boughtCards" class="civilization_card box">
-  <div class="header category_{{ card.cardType }}">
+  <div (click)="card.showDetails = !card.showDetails" class="header category_{{ card.cardType }}">
     <p class="card_name">{{ 'civ-cards.' + card.cardName | transloco }}</p>
     <p class="card_value">{{ card.faceValue }}</p>
+  </div>
+  <div *ngIf="card.showDetails">
+    <p class="card_requires" *ngIf="card.requires != null">{{ 'player.card-requires' | transloco: { 'required': ('civ-cards.' + card.requires | transloco) } }}</p>
+    <p class="card_description" [innerHTML]="'civ-cards-rule.' + card.cardName | transloco"></p>
   </div>
   <div (click)="removeCard(card)" class="action">{{ 'player.remove-from-hand' | transloco }}</div>
 </div>
@@ -21,9 +25,13 @@
 </app-button>
 
 <div *ngFor="let card of cardsToBuy" class="civilization_card box">
-  <div class="header category_{{ card.cardType }}">
+  <div (click)="card.showDetails = !card.showDetails" class="header category_{{ card.cardType }}">
     <p class="card_name">{{ 'civ-cards.' + card.cardName | transloco }}</p>
     <p class="card_value">{{ card.price }} / {{ card.faceValue }}</p>
+  </div>
+  <div *ngIf="card.showDetails">
+    <p class="card_requires" *ngIf="card.requires != null">{{ 'player.card-requires' | transloco: { 'required': ('civ-cards.' + card.requires | transloco) } }}</p>
+    <p class="card_description" [innerHTML]="'civ-cards-rule.' + card.cardName | transloco"></p>
   </div>
   <div (click)="card.status = CardStatus.SELECTED" *ngIf="card.status === CardStatus.UNSELECTED" class="action">
     {{ 'player.select' | transloco }}

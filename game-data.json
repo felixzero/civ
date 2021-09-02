@@ -62,7 +62,8 @@
             { "giver": "mining", "amount": 10 },
             { "giver": "pottery", "amount": 10 },
             { "giver": "cloth_making", "amount": 10 }
-        ]
+        ],
+        "requires": "engineering"
     },
     {
         "cardName": "mining",
@@ -75,7 +76,8 @@
             { "giver": "cloth_making", "amount": 10 },
             { "giver": "pottery", "amount": 10 },
             { "giver": "road_building", "amount": 10 }
-        ]
+        ],
+        "requires": "engineering"
     },
     {
         "cardName": "engineering",
@@ -236,7 +238,8 @@
             { "giver": "drama_poetry", "amount": 10 },
             { "giver": "music", "amount": 10 },
             { "giver": "literacy", "amount": 25 }
-        ]
+        ],
+        "requires": "law"
     },
     {
         "cardName": "philosophy",
@@ -250,7 +253,8 @@
             { "giver": "mathematics", "amount": 25 },
             { "giver": "music", "amount": 20 },
             { "giver": "literacy", "amount": 25 }
-        ]
+        ],
+        "requires": "law"
     },
     {
         "cardName": "deism",
@@ -289,7 +293,8 @@
             { "giver": "pottery", "amount": 10 },
             { "giver": "road_building", "amount": 10 },
             { "giver": "mining", "amount": 10 }
-        ]
+        ],
+        "requires": "enlightenment"
     },
     {
         "cardName": "theology",
@@ -304,7 +309,8 @@
             { "giver": "engineering", "amount": 20 },
             { "giver": "medicine", "amount": 20 },
             { "giver": "mathematics", "amount": 25 }
-        ]
+        ],
+        "requires": "enlightenment"
     }
 ]
 

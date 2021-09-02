@@ -18,6 +18,16 @@
   margin: 0;
 }
 
+.civilization_card p {
+  margin: 0.5rem;
+}
+
+.civilization_card .card_requires {
+  margin: 0.5rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
 .action {
   padding: 0.5rem;
   text-align: center;
