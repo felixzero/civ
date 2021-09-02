@@ -11,8 +11,8 @@
     <p class="card_name">{{ 'civ-cards.' + card.cardName | transloco }}</p>
     <p class="card_value">{{ card.faceValue }}</p>
   </div>
-  <div *ngIf="card.showDetails === true">
-    <p class="card_requires" *ngIf="card.requires !== null">{{ 'player.card-requires' | transloco: { 'required': ('civ-cards.' + card.requires | transloco) } }}</p>
+  <div *ngIf="card.showDetails">
+    <p class="card_requires" *ngIf="card.requires != null">{{ 'player.card-requires' | transloco: { 'required': ('civ-cards.' + card.requires | transloco) } }}</p>
     <p class="card_description" [innerHTML]="'civ-cards-rule.' + card.cardName | transloco"></p>
   </div>
   <div (click)="removeCard(card)" class="action">{{ 'player.remove-from-hand' | transloco }}</div>
@@ -29,8 +29,8 @@
     <p class="card_name">{{ 'civ-cards.' + card.cardName | transloco }}</p>
     <p class="card_value">{{ card.price }} / {{ card.faceValue }}</p>
   </div>
-  <div *ngIf="card.showDetails === true">
-    <p class="card_requires" *ngIf="card.requires !== null">{{ 'player.card-requires' | transloco: { 'required': ('civ-cards.' + card.requires | transloco) } }}</p>
+  <div *ngIf="card.showDetails">
+    <p class="card_requires" *ngIf="card.requires != null">{{ 'player.card-requires' | transloco: { 'required': ('civ-cards.' + card.requires | transloco) } }}</p>
     <p class="card_description" [innerHTML]="'civ-cards-rule.' + card.cardName | transloco"></p>
   </div>
   <div (click)="card.status = CardStatus.SELECTED" *ngIf="card.status === CardStatus.UNSELECTED" class="action">
